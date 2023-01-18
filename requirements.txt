@@ -68,3 +68,4 @@ watchdog==2.1.9
 Werkzeug==2.2.2
 yarl==1.8.2
 zipp==3.11.0
+gunicorn==20.1.0
