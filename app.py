@@ -12,7 +12,7 @@ def process_image(image_url):
 
 # The response will contain the processed image in the form of bytes
     processed_image = response.content
-    with open(r'D:\website\flaskApp\temp.jpg', 'wb') as handler:
+    with open(r'temp.jpg', 'wb') as handler:
         handler.write(processed_image)   
     # Read image
     im = cv2.imread('temp.jpg')
