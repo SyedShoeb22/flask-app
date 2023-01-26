@@ -9,45 +9,52 @@ These instructions will get you a copy of the project up and running on your loc
 - Flask
 - OpenCV
 - Requests
+
 Installing
 Clone the repository to your local machine:
 
-Copy code
+'''
 git clone https://github.com/<YOUR-USERNAME>/image-video-processing-api.git
+'''
 Navigate to the project directory:
 
-Copy code
+'''
 cd image-video-processing-api
+'''
 Create a virtual environment and activate it:
 
-Copy code
+'''
 python -m venv venv
 source venv/bin/activate
+'''
 Install the required packages:
 
-Copy code
+'''
 pip install -r requirements.txt
+'''
 Running the API
 To run the API locally, use the following command:
 
-Copy code
+'''
 python app.py
+'''
 The API will be running on http://localhost:5000/
 
 # Usage
 To process an image, make a POST request to http://localhost:5000/process_image with the following JSON data:
 
-Copy code
+'''
 {
     "image_url": "IMAGE_URL"
 }
+'''
 Replace IMAGE_URL with the url of the image you want to process.
 
 The API will return the processed image in the form of bytes.
 
 # Built With
-Flask - The web framework used
-OpenCV - Used for image and video processing
+- Flask - The web framework used
+- OpenCV - Used for image and video processing
 [Requests](https://
 requests.readthedocs.io/en/master/) - Used for making HTTP requests to retrieve image from URL
 
